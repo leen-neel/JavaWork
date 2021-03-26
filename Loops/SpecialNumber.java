@@ -1,7 +1,6 @@
 package Loops;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class SpecialNumber {
 
@@ -28,7 +27,7 @@ public class SpecialNumber {
             number = Integer.parseInt(in.readLine());
         } catch (Exception e) {
             System.out.println("You messed up lol");
-            System.exit(69);
+            System.exit(0);
         }
 
         int sumOfFacts = 0;
