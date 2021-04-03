@@ -23,7 +23,11 @@ public class WeirdDesignThing___Help {
     }
 
     public static void main(String[] args) {
-        // Call the functions here or die
+        atSigns(2, 5);
+
+        System.out.println();
+
+        sqaureChars(5, 'N');
     }
 
 }
