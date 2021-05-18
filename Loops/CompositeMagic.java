@@ -4,10 +4,12 @@ import java.io.InputStreamReader;
 
 public class CompositeMagic {
 
+    // This function checks the number of factors of the number
+    // If there are more than 2 factors then, the number is composite, else it's a
+    // prime
     public static boolean isComposite(int n) {
 
         int factors = 0;
-
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
                 factors++;
@@ -18,6 +20,8 @@ public class CompositeMagic {
 
     }
 
+    // This function adds the digits of a number
+    // If the sum is 1 then the function returns true else false
     public static boolean isMagic(int n) {
 
         int sum = 0;
@@ -35,6 +39,8 @@ public class CompositeMagic {
 
     }
 
+    // This function takes the range as parameters and prints the numbers which are
+    // composite and magic
     public static void printValues(int m, int n) {
 
         for (int i = m; i <= n; i++) {
