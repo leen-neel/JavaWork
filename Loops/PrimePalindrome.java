@@ -2,11 +2,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// This function checks the number of factors of the number
-// If there are more than 2 factors then, the number is composite, else it's a
-// prime
 public class PrimePalindrome {
-
+    // This function checks the number of factors of the number
+    // If there are more than 2 factors then, the number is composite, else it's a
+    // prime
     public static boolean isPrime(int n) {
 
         int factors = 0;
