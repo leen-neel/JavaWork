@@ -1,5 +1,3 @@
-package Loops;
-
 public class PrimePalin {
 
     public static boolean isPalin(int n) {

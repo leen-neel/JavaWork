@@ -1,5 +1,3 @@
-package Loops;
-
 public class LoopThingy {
 
     public static void main(String[] args) {

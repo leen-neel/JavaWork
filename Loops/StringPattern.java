@@ -1,5 +1,3 @@
-package Loops;
-
 public class StringPattern {
 
     public static void main(String[] args) {

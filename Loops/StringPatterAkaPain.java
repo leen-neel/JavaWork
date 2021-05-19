@@ -1,5 +1,3 @@
-package Loops;
-
 public class StringPatterAkaPain {
 
     public static void main(String[] args) {

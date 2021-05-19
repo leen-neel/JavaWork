@@ -1,5 +1,3 @@
-package Loops;
-
 public class BinaryLookingPattern {
 
     public static void main(String[] args) {

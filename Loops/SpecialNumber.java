@@ -1,5 +1,3 @@
-package Loops;
-
 import java.io.*;
 
 public class SpecialNumber {

@@ -1,5 +1,3 @@
-package Loops;
-
 public class StarTrianglePatternAkaPain {
 
     public static void main(String[] args) {
