@@ -30,7 +30,7 @@ public class FascinatingNumber {
         int[] digits = new int[products.length()];
 
         for (int i = 0; i < digits.length; i++) {
-            digits[i] = products.charAt(i) - '0';
+            digits[i] = Character.getNumericValue(products.charAt(i));
         }
 
         return digits;
