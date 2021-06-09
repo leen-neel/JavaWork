@@ -41,13 +41,21 @@ public class CompositeMagic {
 
     // This function takes the range as parameters and prints the numbers which are
     // composite and magic
+    // The function prints the amount of values printed as well
     public static void printValues(int m, int n) {
+
+        int count = 0;
 
         for (int i = m; i <= n; i++) {
             if (isComposite(i) && isMagic(i)) {
                 System.out.print(i + " ");
+                count++;
             }
         }
+
+        System.out.println();
+
+        System.out.println("Frequency of composite magic numbers is : " + count);
 
     }
 
