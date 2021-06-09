@@ -43,11 +43,16 @@ public class PrimePalindrome {
     // prime and palindrome
     public static void printValues(int m, int n) {
 
+        int count = 0;
+
         for (int i = m; i <= n; i++) {
             if (isPrime(i) && isPalindrome(i)) {
                 System.out.print(i + " ");
+                count++;
             }
         }
+
+        System.out.println(count == 0 ? "Invalid input" : "Frequency of composite magic numbers is : " + count);
 
     }
 
@@ -64,7 +69,6 @@ public class PrimePalindrome {
         System.out.println();
 
         if (m < 3000 && n < 3000) {
-            System.out.println();
             printValues(m, n);
         } else {
             System.out.println("Out of range.");
