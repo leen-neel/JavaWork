@@ -41,6 +41,7 @@ public class PrimePalindrome {
 
     // This function takes the range as parameters and prints the numbers which are
     // prime and palindrome
+    // The function prints the amount of values printed as well
     public static void printValues(int m, int n) {
 
         int count = 0;
