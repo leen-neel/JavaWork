@@ -63,7 +63,7 @@ public class PrimePalindrome {
 
         System.out.println();
 
-        if (m < 3000 || n < 3000) {
+        if (m < 3000 && n < 3000) {
             System.out.println();
             printValues(m, n);
         } else {
