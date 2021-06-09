@@ -55,7 +55,7 @@ public class CompositeMagic {
 
         System.out.println();
 
-        System.out.println("Frequency of composite magic numbers is : " + count);
+        System.out.println(count == 0 ? "Invalid input" : "Frequency of composite magic numbers is : " + count);
 
     }
 
@@ -71,8 +71,7 @@ public class CompositeMagic {
 
         System.out.println();
 
-        if (m < 3000 || n < 3000) {
-            System.out.println();
+        if (m < 3000 && n < 3000) {
             printValues(m, n);
         } else {
             System.out.println("Out of range.");
