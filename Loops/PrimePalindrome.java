@@ -52,7 +52,7 @@ public class PrimePalindrome {
             }
         }
 
-        System.out.println(count == 0 ? "Invalid input" : "Frequency of composite magic numbers is : " + count);
+        System.out.println(count == 0 ? "\nInvalid input" : "\nFrequency of composite magic numbers is : " + count);
 
     }
 
