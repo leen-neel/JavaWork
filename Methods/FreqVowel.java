@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.Map;
 
 public class FreqVowel {
 
@@ -54,6 +55,24 @@ public class FreqVowel {
         }
 
         return vowelFreq;
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a string : ");
+        String str = in.readLine();
+
+        System.out.println();
+
+        Map<String, Integer> vowelFreq = vowelCount(str);
+
+        for (String value : vowelFreq.keySet()) {
+            int amount = vowelFreq.get(value);
+            System.out.println("The frequency of \'" + value + "\' is : " + amount);
+        }
 
     }
 
