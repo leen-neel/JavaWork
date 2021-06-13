@@ -13,7 +13,7 @@ public class AutomorphicNumber {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(Syste, in));
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
