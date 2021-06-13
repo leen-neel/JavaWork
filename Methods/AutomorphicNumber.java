@@ -18,6 +18,8 @@ public class AutomorphicNumber {
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
 
+        System.out.println(isAutomorphic(n) ? n + " is an automorphic number." : n + " is not an automorphic number.");
+
     }
 
 }
