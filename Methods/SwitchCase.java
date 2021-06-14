@@ -12,7 +12,9 @@ public class SwitchCase {
 
             if (Character.isUpperCase(str.charAt(i))) {
                 switched += str.toLowerCase();
-            } else {
+            }
+
+            if (Character.isLowerCase(str.charAt(i))) {
                 switched += str.toUpperCase();
             }
 
@@ -28,6 +30,10 @@ public class SwitchCase {
 
         System.out.print("Enter a sentence : ");
         String str = in.readLine();
+
+        String nstr = switchCase(str);
+
+        System.out.println("The string after getting switched is : " + nstr);
 
     }
 
