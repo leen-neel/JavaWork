@@ -11,11 +11,11 @@ public class SwitchCase {
         for (int i = 0; i < str.length(); i++) {
 
             if (Character.isUpperCase(str.charAt(i))) {
-                switched += str.toLowerCase();
+                switched += Character.toLowerCase(str.charAt(i));
             }
 
             if (Character.isLowerCase(str.charAt(i))) {
-                switched += str.toUpperCase();
+                switched += Character.toUpperCase(str.charAt(i));
             }
 
         }
@@ -31,9 +31,7 @@ public class SwitchCase {
         System.out.print("Enter a sentence : ");
         String str = in.readLine();
 
-        String nstr = switchCase(str);
-
-        System.out.println("The string after getting switched is : " + nstr);
+        System.out.println("The string after getting switched is : " + switchCase(str));
 
     }
 
