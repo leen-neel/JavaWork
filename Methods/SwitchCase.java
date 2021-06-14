@@ -18,6 +18,10 @@ public class SwitchCase {
                 switched += Character.toUpperCase(str.charAt(i));
             }
 
+            if (Character.isWhitespace(str.charAt(i))) {
+                switched += " ";
+            }
+
         }
 
         return switched;
