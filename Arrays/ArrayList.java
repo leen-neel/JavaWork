@@ -1,8 +1,11 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class ArrayList {
     public static void main(String[] args) {
         HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        Map<String, String> nums = new HashMap<String, String>();
 
         capitalCities.put("England", "London");
         capitalCities.put("Germany", "Berlin");
@@ -10,6 +13,7 @@ public class ArrayList {
         capitalCities.put("USA", "Washington DC");
         System.out.println(capitalCities);
 
-        System.out.println(capitalCities.get("USA"));
+        nums.put("India", "Delhi");
+        System.out.println(nums.containsKey("India"));
     }
 }
