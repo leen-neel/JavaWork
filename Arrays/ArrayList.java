@@ -15,5 +15,6 @@ public class ArrayList {
 
         nums.put("India", "Delhi");
         System.out.println(nums.containsKey("India"));
+        System.out.println(nums.containsValue("London"));
     }
 }
