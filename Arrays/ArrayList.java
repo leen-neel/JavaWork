@@ -18,5 +18,6 @@ public class ArrayList {
         System.out.println(nums.containsKey("India"));
         System.out.println(nums.containsValue("London"));
         System.out.println(nums.keySet());
+        System.out.println(nums.values());
     }
 }
