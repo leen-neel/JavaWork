@@ -19,6 +19,6 @@ public class ArrayList {
         System.out.println(nums.containsValue("London"));
         System.out.println(nums.keySet());
         System.out.println(nums.values());
-        System.out.println(nums.hashCode());
+        System.out.println(nums.size());
     }
 }
