@@ -14,11 +14,11 @@ public class ArrayList {
         System.out.println(capitalCities);
 
         nums.put("India", "Delhi");
+        nums.put("USA", "Washington");
+        nums.put("Bangladesh", "Dhaka");
+        nums.put("China", "Beinjing");
 
-        System.out.println(nums.containsKey("India"));
-        System.out.println(nums.containsValue("London"));
-        System.out.println(nums.keySet());
-        System.out.println(nums.values());
-        System.out.println(nums.size());
+        System.out.println(nums);
+
     }
 }
