@@ -18,7 +18,7 @@ public class ArrayList {
         nums.put("Bangladesh", "Dhaka");
         nums.put("China", "Beinjing");
 
-        System.out.println(nums.get("China"));
+        System.out.println(nums.containsValue("Beinjing"));
 
     }
 }
