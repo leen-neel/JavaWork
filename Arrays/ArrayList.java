@@ -18,7 +18,5 @@ public class ArrayList {
         nums.put("Bangladesh", "Dhaka");
         nums.put("China", "Beinjing");
 
-        System.out.println(nums.values());
-
     }
 }
