@@ -38,4 +38,17 @@ public class ManipulateVowels {
 
     }
 
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a string : ");
+        String str = in.readLine();
+
+        System.out.println();
+
+        System.out.println(changeVowels(str));
+
+    }
+
 }
