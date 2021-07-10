@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class RevSent {
 
     public static String reversedSent(String str) {
@@ -15,8 +19,17 @@ public class RevSent {
 
     }
 
-    public static void main(String[] args) {
-        System.out.println(reversedSent("dsjlfjs sd fjsf"));
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a sentence : ");
+        String str = in.readLine();
+
+        System.out.println();
+
+        System.out.println(reversedSent(str));
+
     }
 
 }
