@@ -18,8 +18,17 @@ public class ReplaceFirst {
 
     public static String replaceFirst(String str) {
 
+        str = str.toUpperCase();
         String[] words = str.split("\\s");
         String nstr = "";
+
+        for (int i = 0; i < words.length; i++) {
+
+            nstr += replaceWord(words[i]) + " ";
+
+        }
+
+        return nstr;
 
     }
 
