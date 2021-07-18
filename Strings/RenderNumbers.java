@@ -11,8 +11,10 @@ public class RenderNumbers {
         try {
             System.out.print("Enter a number : ");
             int n = Integer.parseInt(in.readLine());
-        } catch (Exception e) {
-            System.out.println(e);
+
+            System.out.println("The number u entered was : " + n);
+        } catch (NumberFormatException e) {
+            System.out.println("Enter a number u smooth brain");
         }
 
     }
