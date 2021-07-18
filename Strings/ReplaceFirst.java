@@ -4,6 +4,18 @@ import java.io.InputStreamReader;
 
 public class ReplaceFirst {
 
+    public static String replaceWord(String str) {
+
+        String nstr = "X";
+
+        for (int i = 1; i < str.length(); i++) {
+            nstr += str.charAt(i);
+        }
+
+        return nstr;
+
+    }
+
     public static String replaceFirst(String str) {
 
         String[] words = str.split("\\s");
