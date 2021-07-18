@@ -39,6 +39,10 @@ public class ReplaceFirst {
         System.out.print("Enter a string : ");
         String str = in.readLine();
 
+        System.out.println();
+
+        System.out.println(replaceFirst(str));
+
     }
 
 }
