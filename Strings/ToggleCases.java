@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class ToggleCases {
 
     public static String toggleCase(String str) {
@@ -27,6 +31,19 @@ public class ToggleCases {
         }
 
         return nstr;
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a string : ");
+        String str = in.readLine();
+
+        System.out.println();
+
+        System.out.println(toggleCase(str));
 
     }
 
