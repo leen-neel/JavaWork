@@ -42,9 +42,19 @@ public class WordWise {
 
         for (int i = 0; i < words.length; i++) {
 
-            System.out.println(words[i] + " " + freq_vowel(words[i]));
+            System.out.println(words[i] + " : " + freq_vowel(words[i]));
 
         }
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        WordWise obj = new WordWise();
+
+        obj.readSent();
+        System.out.println();
+        obj.arrange();
 
     }
 
