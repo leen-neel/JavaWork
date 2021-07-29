@@ -35,4 +35,16 @@ public class PrimePalinGen {
 
     }
 
+    public void generate() {
+
+        for (int i = start; i <= end; i++) {
+
+            if (isPrime(i) == 1 && isPalin(i) == 1) {
+                System.out.print(i + " ");
+            }
+
+        }
+
+    }
+
 }
