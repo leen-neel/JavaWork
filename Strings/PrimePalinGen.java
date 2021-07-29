@@ -1,3 +1,5 @@
+import jdk.internal.jshell.tool.resources.l10n;
+
 public class PrimePalinGen {
 
     int start;
@@ -21,6 +23,15 @@ public class PrimePalinGen {
         }
 
         return f == 2 ? 1 : 0;
+
+    }
+
+    public static int isPalin(int i) {
+
+        StringBuffer number = new StringBuffer(Integer.parseInt(i));
+        StringBuffer reveNumber = number.reverse();
+
+        return number.equals(reveNumber) ? 1 : 0;
 
     }
 
