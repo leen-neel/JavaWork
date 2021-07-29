@@ -22,4 +22,18 @@ public class WordWise {
 
     }
 
+    public int freq_vowel(String w) {
+
+        int count = 0;
+
+        for (int i = 0; i < w.length(); i++) {
+            if (isVowel(w.charAt(i))) {
+                count++;
+            }
+        }
+
+        return count;
+
+    }
+
 }
