@@ -36,4 +36,16 @@ public class WordWise {
 
     }
 
+    public void arrange() {
+
+        String[] words = str.split("\\s");
+
+        for (int i = 0; i < words.length; i++) {
+
+            System.out.println(words[i] + " " + freq_vowel(words[i]));
+
+        }
+
+    }
+
 }
