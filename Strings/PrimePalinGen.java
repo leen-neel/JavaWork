@@ -1,4 +1,6 @@
-import jdk.internal.jshell.tool.resources.l10n;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class PrimePalinGen {
 
@@ -14,7 +16,7 @@ public class PrimePalinGen {
 
         int f = 0;
 
-        for (int j = 0; j <= i; j++) {
+        for (int j = 1; j <= i; j++) {
 
             if (i % j == 0) {
                 f++;
@@ -28,8 +30,12 @@ public class PrimePalinGen {
 
     public static int isPalin(int i) {
 
-        StringBuffer number = new StringBuffer(Integer.parseInt(i));
-        StringBuffer reveNumber = number.reverse();
+        String number = Integer.toString(i);
+        String reveNumber = "";
+
+        for (int j = number.length() - 1; j >= 0; j--) {
+            reveNumber += number.charAt(j);
+        }
 
         return number.equals(reveNumber) ? 1 : 0;
 
@@ -44,6 +50,23 @@ public class PrimePalinGen {
             }
 
         }
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter the lower limit : ");
+        int a = Integer.parseInt(in.readLine());
+
+        System.out.print("Enter the upper limit : ");
+        int b = Integer.parseInt(in.readLine());
+
+        System.out.println();
+        PrimePalinGen obj = new PrimePalinGen(a, b);
+
+        obj.generate();
 
     }
 
