@@ -52,6 +52,24 @@ public class Result {
 
         }
 
+        System.out.println();
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        
+        System.out.print("Enter the total number of students : ");
+        int totalStudents = Integer.parseInt(in.readLine());
+
+        System.out.println();
+
+        Result rs = new Result();
+
+        rs.getSize(totalStudents);
+        rs.getdata();
+        rs.formdata();
+
+
     }
 
 }
