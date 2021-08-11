@@ -37,6 +37,21 @@ public class Result {
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
+        for (int i = 0; i < this.n; i++) {
+            
+
+            System.out.print("Enter name : ");
+            this.nam[i] = in.readLine();
+
+            System.out.print("Enter marks : ");
+            this.tot[i] = Integer.parseInt(in.readLine());
+
+            this.roll[i] = i + 1;
+
+            System.out.println();
+
+        }
+
     }
 
 }
