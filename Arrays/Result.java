@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Result {
 
     String[] nam;
@@ -26,6 +30,12 @@ public class Result {
             System.out.println(nam[i] + "\t" + roll[i] + "\t" + tot[i]);
 
         }
+
+    }
+
+    public void getdata() throws IOException {
+        
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
     }
 
