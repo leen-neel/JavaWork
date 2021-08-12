@@ -4,6 +4,9 @@ public class GoldBach {
     
     public static boolean isPrime(int n) {
         
+        if (n == 1)
+            return false;
+
         int factors = 0;
 
         for (int i = 1; i <= n; i++) {
