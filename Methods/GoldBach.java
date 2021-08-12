@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class GoldBach {
     
+    // Check if a number is a prime number or not
     public static boolean isPrime(int n) {
         
         if (n == 1)
