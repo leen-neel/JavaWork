@@ -58,9 +58,13 @@ public class GoldBach {
         int n = Integer.parseInt(in.readLine());
 
         if (n > 9 && n < 50 && n % 2 == 0) {
+            
             findPrimes(n);
+
         } else {
+
             System.out.println("Invalid input");
+            
         }
 
     }
