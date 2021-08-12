@@ -33,12 +33,18 @@ public class GoldBach {
             if (isPrime(i)) {
                 difference = n - i;
 
+                // Checks if the difference already exists
                 if (!differences.contains(i)) {
+
                     if (isPrime(difference)) {
+
                         differences.add(difference);
                         System.out.println(i + " + " + difference + " = " + n);
+                    
                     }   
+                
                 }
+            
             }
 
         }
