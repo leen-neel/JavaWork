@@ -17,7 +17,8 @@ public class GoldBach {
     }
 
     public static void findPrimes(int n) {
-    
+        
+        ArrayList<Integer> differences = new ArrayList<Integer>();
 
         int difference = 0;
 
@@ -25,13 +26,16 @@ public class GoldBach {
             
             if (isPrime(i)) {
                 difference = n - i;
-                if (isPrime(difference)) {
-                    System.out.println(i + " + " + difference + " = " + n);
+
+                if (!differences.contains(i)) {
+                    if (isPrime(difference)) {
+                        differences.add(difference);
+                        System.out.println(i + " + " + difference + " = " + n);
+                    }   
                 }
             }
 
         }
-
     }
 
     public static void main(String[] args) {
