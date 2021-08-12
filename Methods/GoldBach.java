@@ -48,10 +48,10 @@ public class GoldBach {
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter a number between 10 to 49 : ");
+        System.out.print("Enter an even number between 10 to 49 : ");
         int n = Integer.parseInt(in.readLine());
 
-        if (n > 9 && n < 50) {
+        if (n > 9 && n < 50 && n % 2 == 0) {
             findPrimes(n);
         } else {
             System.out.println("Invalid input");
