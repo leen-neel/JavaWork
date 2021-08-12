@@ -30,16 +30,16 @@ public class GoldBach {
 
         for (int i = 0; i <= n; i++) {
             
-            if (isPrime(i)) {
+            if (isPrime(i)) { // Checks if i is a prime number
                 difference = n - i;
 
-                // Checks if the difference already exists
+                // Checks if the difference already exists, if it does the loop continues
                 if (!differences.contains(i)) {
 
                     if (isPrime(difference)) {
 
-                        differences.add(difference);
-                        System.out.println(i + " + " + difference + " = " + n);
+                        differences.add(difference); 
+                        System.out.println(i + " + " + difference + " = " + n); // Prints the difference between n and i
                     
                     }   
                 
