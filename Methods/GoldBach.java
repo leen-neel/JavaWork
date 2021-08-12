@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class GoldBach {
     
     public static boolean isPrime(int n) {
@@ -15,9 +17,25 @@ public class GoldBach {
     }
 
     public static void findPrimes(int n) {
-        
-        
+    
 
+        int difference = 0;
+
+        for (int i = 0; i <= n; i++) {
+            
+            if (isPrime(i)) {
+                difference = n - i;
+                if (isPrime(difference)) {
+                    System.out.println(i + " + " + difference + " = " + n);
+                }
+            }
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        findPrimes(10);
     }
 
 }
