@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class GoldBach {
@@ -41,8 +44,19 @@ public class GoldBach {
         }
     }
 
-    public static void main(String[] args) {
-        findPrimes(10);
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a number between 10 to 49 : ");
+        int n = Integer.parseInt(in.readLine());
+
+        if (n > 9 && n < 50) {
+            findPrimes(n);
+        } else {
+            System.out.println("Invalid input");
+        }
+
     }
 
 }
