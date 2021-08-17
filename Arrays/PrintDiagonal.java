@@ -61,4 +61,5 @@ public class PrintDiagonal {
  * Step 5: Start a for loop to go through the two-dimensional array
  * Step 6: If (i == j) or ((i + j) == (n - 1)) print the element with a tab
  * Step 7: Else print a whitespace with a tab 
+ * Step 8: Stop
 */
