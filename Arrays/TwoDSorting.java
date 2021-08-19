@@ -12,7 +12,6 @@ public class TwoDSorting {
  
                 for (int k = 0; k < arr[i].length - j - 1; k++) {
                     if (arr[i][k] > arr[i][k + 1]) {
-
                         int temp = arr[i][k];
                         arr[i][k] = arr[i][k + 1];
                         arr[i][k + 1] = temp;
@@ -21,17 +20,17 @@ public class TwoDSorting {
             }
         }
         
+        printArray(arr);
+
+    }
+
+    public static void printArray(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
-
             for (int j = 0; j < arr.length; j++) {
-
                 System.out.print(arr[i][j] + "\t");
-
             }
-            
             System.out.println();
         }
-
     }
 
     public static void main(String[] args) throws IOException {
@@ -55,17 +54,7 @@ public class TwoDSorting {
 
         System.out.println();
 
-        for (int i = 0; i < arr.length; i++) {
-
-            for (int j = 0; j < arr.length; j++) {
-
-                System.out.print(arr[i][j] + "\t");
-
-            }
-
-            System.out.println();
-
-        }
+        printArray(arr);
 
         System.out.println();
 
