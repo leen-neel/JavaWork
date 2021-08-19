@@ -70,3 +70,17 @@ public class TwoDSorting {
 
 }
 
+/** 
+ * Step 1: Start
+ * Step 2: Initialize a two-dimensional array
+ * Step 3: Print the array
+ * Step 4: Loop through the array's rows
+ * Step 5: Loop though the array's column
+ * Step 6: Compare two terms of the array
+ * Step 7: If the firsr one is greater than the other, swap them
+ * Step 8: Loop through all elements and sort them
+ * Step 9: Print the sorted array
+ * Step 10: Stop
+*/
+
+
