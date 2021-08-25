@@ -21,6 +21,30 @@ public class Discornts {
         
     }
 
+    public void calc() {
+        
+        if (this.cost < 5000) {
+            
+            this.dc = 0;
+
+        } else if (this.cost > 5000 && this.cost <= 10000) {
+            
+            this.dc = 10;
+
+        } else if (this.cost > 10000 && this.cost <= 15000) {
+            
+            this.dc = 15;
+
+        } else if (this.cost > 15000) {
+
+            this.dc = 20;
+
+        }
+
+        this.amt = this.cost - ((this.dc / this.cost) * 100);
+
+    }
+
     
 
 }
