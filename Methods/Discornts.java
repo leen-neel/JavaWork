@@ -45,6 +45,13 @@ public class Discornts {
 
     }
 
-    
+    public void display() {
+        
+        System.out.println("Name of customer : " + this.name);
+        System.out.println("Cost of the product : " + this.cost + " Rs.");
+        System.out.println("Discount applied : " + this.dc + "%");
+        System.out.println("Amount payable : " + this.amt + " Rs.");
+
+    }
 
 }
