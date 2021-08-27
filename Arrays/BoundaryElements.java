@@ -21,7 +21,9 @@ public class BoundaryElements {
                 }
 
             }
+
             System.out.println();
+            
         }
 
     }
