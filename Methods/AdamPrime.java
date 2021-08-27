@@ -78,3 +78,25 @@ public class AdamPrime {
     }
 
 }
+
+/**
+ * main()
+ * Step 1 - Start
+ * Step 2 - Input the lower and the upper limit from the user
+ * Step 3 - Start for loop from the lower to the upper limit
+ * Step 4 - Check if the number is an adam number (isAdamNumber()) and a prime number (isPrimeNumber())
+ * Step 5 - Print the number and increment the count variable
+ * Step 6 - Stop
+ * 
+ * isAdamNumber()
+ * Step 1 - Square the number and store it in a variable
+ * Step 2 - Reverse the number and square the reversed number
+ * Step 3  - Return if the square of the input number and the reverse of the reversed square number are the same
+ * 
+ * isPrimeNumber()
+ * Step 1 - Input a number
+ * Step 2 - Make a variable to store the number of factors (name it facts)
+ * Step 3 - Start a for loop from 1 to the input number
+ * Step 3 - If (i%n==0) increment facts variable
+ * Step 5 - Return (facts==2)
+ */
