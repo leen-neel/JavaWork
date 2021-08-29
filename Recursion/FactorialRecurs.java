@@ -6,7 +6,15 @@ import java.io.InputStreamReader;
 
 public class FactorialRecurs {
 
-   
+    public static int factorial(int n) {
+        
+        if (n == 1) {
+            return 1;
+        } else {
+            return (n * factorial(n - 1));
+        }
+
+    }
 
     public static void main(String[] args) throws IOException {
 
@@ -14,8 +22,6 @@ public class FactorialRecurs {
 
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
-
-        
 
     }
 
