@@ -23,6 +23,8 @@ public class FactorialRecurs {
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
 
+        System.out.println("The factorial of the number is : " + factorial(n));
+
     }
 
 }
