@@ -13,6 +13,10 @@ public class HCF {
 
     }
 
+    public static int lcm(int a, int b) {
+        return ((a * b) / hcf(a, b));
+    }
+
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
@@ -22,7 +26,10 @@ public class HCF {
         System.out.print("Enter another number : ");
         int b = Integer.parseInt(in.readLine());
 
+        System.out.println();
+
         System.out.println("The HCF of " + a + " and " + b + " is : " + hcf(a, b));
+        System.out.println("The LCM of " + a + " and " + b + " is : " + lcm(a, b));
     }
 
 }
