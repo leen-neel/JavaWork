@@ -30,7 +30,9 @@ public class FindPower {
         System.out.print("Enter the power : ");
         int power = Integer.parseInt(in.readLine());
 
-        System.out.println(n + "^" + power + "=" + power(n, power));
+        System.out.println();
+
+        System.out.println(n + " ^ " + power + " = " + power(n, power));
 
     }
 
