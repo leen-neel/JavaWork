@@ -11,11 +11,26 @@ public class RecFact {
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter a number : ");
-        this.n = Integer.parseInt(in.readLine());
+        while (true) {
+            
+            System.out.print("Enter the value of n : ");
+            this.n = Integer.parseInt(in.readLine());
+    
+            System.out.print("Enter the value of r (less than n) : ");
+            this.r = Integer.parseInt(in.readLine());
 
-        System.out.print("Enter another number : ");
-        this.r = Integer.parseInt(in.readLine());
+            if (n > r) {
+                
+                break;
+
+            } else {
+                
+                System.out.println("The value of n must be greater than the value of r, please try again.");
+                System.out.println();
+
+            }
+
+        }
 
     }
 
@@ -36,6 +51,33 @@ public class RecFact {
 
     }
 
-    
+    public static void main(String[] args) throws IOException {
+        
+        RecFact ob = new RecFact();
+
+        while (true) {
+            
+            try {
+                
+                ob.readNum();
+                System.out.println();
+                ob.factseries();
+
+                break;
+
+            } catch (NumberFormatException e) {
+                
+                System.out.println("Please enter a number instead of a string.");
+                System.out.println();
+
+            } catch (Error err) {
+
+                System.err.println(err);
+
+            }
+
+        }
+
+    }
 
 }
