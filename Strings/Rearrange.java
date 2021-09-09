@@ -4,9 +4,9 @@ import java.io.InputStreamReader;
 
 public class Rearrange {
 
-    String txt = "EUROPE";
+    String txt = "project";
     String cxt; 
-    int len;
+    int len = 7;
 
     public void readWord() throws IOException {
         
@@ -31,7 +31,7 @@ public class Rearrange {
         
         String vowelPlaceMent = "";
 
-        for (int i = 0; i < this.txt.length(); i++) {
+        for (int i = 0; i < this.len; i++) {
 
             if (isVowel(this.txt.charAt(0))) {
                 
@@ -58,7 +58,22 @@ public class Rearrange {
             case "first":
                 this.cxt = this.txt + "Y";
                 System.out.println(this.cxt);
-                break;
+            break;
+            
+            case "middle": 
+            
+                int vowelIndex = 0;
+                for (int i = 0; i <= this.len - 1; i++) {
+                    if (isVowel(txt.charAt(i))) {
+                        vowelIndex = i;
+                        break;
+                    }
+                }
+
+                this.cxt = this.txt.substring(vowelIndex, this.txt.length()) + this.txt.substring(0, vowelIndex) + "C";
+                System.out.println(cxt);
+
+            break;
         
             default:
                 break;
