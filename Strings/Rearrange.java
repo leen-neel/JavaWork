@@ -4,9 +4,9 @@ import java.io.InputStreamReader;
 
 public class Rearrange {
 
-    String txt = "project";
+    String txt;
     String cxt; 
-    int len = 7;
+    int len;
 
     public void readWord() throws IOException {
         
@@ -61,7 +61,6 @@ public class Rearrange {
             break;
             
             case "middle": 
-            
                 int vowelIndex = 0;
                 for (int i = 0; i <= this.len - 1; i++) {
                     if (isVowel(txt.charAt(i))) {
@@ -72,11 +71,12 @@ public class Rearrange {
 
                 this.cxt = this.txt.substring(vowelIndex, this.txt.length()) + this.txt.substring(0, vowelIndex) + "C";
                 System.out.println(cxt);
-
             break;
-        
-            default:
-                break;
+
+            case "none": 
+                this.cxt = this.txt + "N";
+                System.out.println(cxt);
+            break;
         }
 
     }
