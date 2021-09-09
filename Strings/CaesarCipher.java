@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -69,6 +72,29 @@ public class CaesarCipher {
 
     }
 
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
+        while (true) {
+            
+            System.out.print("Enter a string, the length must be greater than 3 and lower than 100 : ");
+            String str = in.readLine();
+
+            if (str.length() > 3 && str.length() < 100) {
+
+                System.out.println(encrypt(str));
+                break;
+
+            } else {
+
+                System.out.println("The length must be greater than 3 and lower than 100, please try again.");
+                System.out.println();
+                
+            }
+
+        }
+
+    }
 
 }
