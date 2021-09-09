@@ -18,6 +18,8 @@ public class Rearrange {
         this.txt = this.txt.toUpperCase();
         this.len = this.txt.length();
 
+        System.out.println();
+
     }
 
     public boolean isVowel(char ch) {
@@ -52,12 +54,9 @@ public class Rearrange {
 
         }
 
-        System.out.println(vowelPlaceMent);
-
         switch (vowelPlaceMent) {
             case "first":
                 this.cxt = this.txt + "Y";
-                System.out.println(this.cxt);
             break;
             
             case "middle": 
@@ -70,12 +69,10 @@ public class Rearrange {
                 }
 
                 this.cxt = this.txt.substring(vowelIndex, this.txt.length()) + this.txt.substring(0, vowelIndex) + "C";
-                System.out.println(cxt);
             break;
 
             case "none": 
                 this.cxt = this.txt + "N";
-                System.out.println(cxt);
             break;
         }
 
@@ -88,10 +85,13 @@ public class Rearrange {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         
         Rearrange ob = new Rearrange();
+
+        ob.readWord();
         ob.convert();
+        ob.display();
 
     }
 
