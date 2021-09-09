@@ -81,6 +81,13 @@ public class Rearrange {
 
     }
 
+    public void display() {
+        
+        System.out.println("The string before modifying : " + this.txt);
+        System.out.println("The string after modifying : " + this.cxt);
+
+    }
+
     public static void main(String[] args) {
         
         Rearrange ob = new Rearrange();
