@@ -47,9 +47,19 @@ public class Rearrange {
             } else if (!isVowel(vowelPlaceMent.charAt(i)) && i == this.len - 1) {
 
                 vowelPlaceMent = "none";
+                break;
 
             }
 
+        }
+
+        switch (vowelPlaceMent) {
+            case "first":
+                
+                break;
+        
+            default:
+                break;
         }
 
     }
