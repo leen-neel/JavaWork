@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Rearrange {
 
-    String txt;
+    String txt = "EUROPE";
     String cxt; 
     int len;
 
@@ -23,7 +23,6 @@ public class Rearrange {
     public boolean isVowel(char ch) {
         
         ch = Character.toUpperCase(ch);
-
         return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
 
     }
@@ -32,19 +31,19 @@ public class Rearrange {
         
         String vowelPlaceMent = "";
 
-        for (int i = 0; i < this.txt.length; i++) {
-            
-            if (isVowel(vowelPlaceMent.charAt(0))) {
+        for (int i = 0; i < this.txt.length(); i++) {
+
+            if (isVowel(this.txt.charAt(0))) {
                 
                 vowelPlaceMent = "first";
                 break;
 
-            } else if (isVowel(vowelPlaceMent.charAt(i)) && i != 0) {
+            } else if (isVowel(this.txt.charAt(i)) && i != 0) {
 
                 vowelPlaceMent = "middle";
                 break;
 
-            } else if (!isVowel(vowelPlaceMent.charAt(i)) && i == this.len - 1) {
+            } else if (!isVowel(this.txt.charAt(i)) && i == this.len - 1) {
 
                 vowelPlaceMent = "none";
                 break;
@@ -53,14 +52,24 @@ public class Rearrange {
 
         }
 
+        System.out.println(vowelPlaceMent);
+
         switch (vowelPlaceMent) {
             case "first":
-                
+                this.cxt = this.txt + "Y";
+                System.out.println(this.cxt);
                 break;
         
             default:
                 break;
         }
+
+    }
+
+    public static void main(String[] args) {
+        
+        Rearrange ob = new Rearrange();
+        ob.convert();
 
     }
 
