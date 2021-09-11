@@ -15,13 +15,8 @@ public class AgeChecker {
             // Anything here will get executed only if the age is less than 18
             System.out.println("Young student.");
 
-        } else {
-
-            // This gets executed when the age is greater than 18
-            System.out.println("Old student");
-
         }
-
+        
     }
 
 }
