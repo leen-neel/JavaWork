@@ -50,7 +50,7 @@ public class CaesarCipher {
 
                 } else {
                     
-                    // If the character isn't lowercase, first make it uppercase
+                    // If the character is lowercase, first make it uppercase
                     // Get it from the "cipher" map
                     // Make the character from the Map lowercase and add it to the string
 
