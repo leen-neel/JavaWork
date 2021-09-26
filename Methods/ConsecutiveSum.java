@@ -39,7 +39,6 @@ public class ConsecutiveSum {
             sum = 0;
             start++;
             
-            
         }
 
     }
