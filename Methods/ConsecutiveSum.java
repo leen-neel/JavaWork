@@ -4,16 +4,11 @@ import java.io.InputStreamReader;
 
 public class ConsecutiveSum {
 
-    public static void main(String[] args) throws IOException {
+    public static void consecutiveSum(int n) {
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-
-        System.out.print("Enter a number : ");
-        int n = Integer.parseInt(in.readLine());
-        
         int start = 1;
         int end = (n + 1) / 2;
-
+        
         while (start < end) {
 
             int sum = 0;
@@ -46,6 +41,18 @@ public class ConsecutiveSum {
             
             
         }
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a number : ");
+        int n = Integer.parseInt(in.readLine());
+
+        consecutiveSum(n);
+    
         
     }
     
