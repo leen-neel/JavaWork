@@ -52,7 +52,6 @@ public class ConsecutiveSum {
         int n = Integer.parseInt(in.readLine());
 
         consecutiveSum(n);
-    
         
     }
     
