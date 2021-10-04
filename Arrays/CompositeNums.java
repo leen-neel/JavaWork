@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class CompositeNums {
 
     public static boolean isComposite(int n) {
@@ -17,13 +18,33 @@ public class CompositeNums {
     public static void arrayComp(int n) {
         
         int[][] arr = new int[n][n];
+        int iterator = 4;
 
-        
+        for (int i = 0; i < n; i++) {
+            
+            for (int j = 0; j < n; j++) {
+                
+                if (isComposite(iterator)) {
+                    arr[i][j] = iterator;
+                }
+
+                iterator++;
+
+            }
+
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+        }
 
     }
 
     public static void main(String[] args) {
-        System.out.println(isComposite(4));
+        arrayComp(3);
     }
     
 }
