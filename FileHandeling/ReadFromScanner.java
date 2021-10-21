@@ -28,7 +28,7 @@ public class ReadFromScanner {
 
     public static void main(String[] args) throws Exception {
 
-        File file = new File("/home/and249/RandomJavaStuff/Help_Pls/FileHandeling/text.txt");
+        File file = new File("./text.txt");
         Scanner sc = new Scanner(file);
 
         String str = "";
