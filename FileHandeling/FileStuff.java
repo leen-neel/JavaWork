@@ -6,7 +6,7 @@ public class FileStuff {
 
     public static void main(String[] args) throws Exception {
 
-        FileReader fr = new FileReader("/home/and249/RandomJavaStuff/Help_Pls/FileHandeling/text.txt");
+        FileReader fr = new FileReader("./text.txt");
 
         int i = 0;
         while ((i = fr.read()) != -1) {
