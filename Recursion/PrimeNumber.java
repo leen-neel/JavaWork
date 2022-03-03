@@ -10,7 +10,7 @@ public class PrimeNumber {
           
         // Base cases
         if (n <= 2)
-            return (n == 2) ? true : false;
+            return (n == 2);
         if (n % i == 0)
             return false;
         if (i * i > n)
