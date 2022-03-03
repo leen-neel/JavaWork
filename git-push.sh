@@ -8,4 +8,5 @@ git commit -am "$commit_message"
 git push origin main
 
 sleep 2
+echo "DONE!!!"
 clear
