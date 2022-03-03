@@ -9,4 +9,5 @@ git push origin main
 
 sleep 2
 echo "DONE!!!"
+sleep 2
 clear
