@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Arrays;
 
 public class SpecialNumber {
 
@@ -13,6 +14,16 @@ public class SpecialNumber {
 
         return digits;
 
+    }
+
+    public static int factorial(int n) {
+        
+        if (n == 1) {
+            return 1;
+        } else {
+            return (n * factorial(n - 1));
+        }   
+     
     }
 
     public static void main(String[] args) throws IOException {
@@ -32,12 +43,8 @@ public class SpecialNumber {
         int[] digits = toDigArr(number);
 
         for (int i = 0; i < digits.length; i++) {
-
-            sumOfFacts += new Factorial(digits[i]).fact;
-
+            sumOfFacts += factorial(digits[i]);
         }
-
-        System.out.println();
 
         if (sumOfFacts == number) {
             System.out.println(number + " is a special number.");
