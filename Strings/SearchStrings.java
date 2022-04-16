@@ -11,8 +11,6 @@ public class SearchStrings {
         System.out.print("Enter a string : ");
         String str = in.readLine();
 
-        System.out.println();
-
         System.out.print("Enter the word you want to search : ");
         String search = in.readLine();
 
