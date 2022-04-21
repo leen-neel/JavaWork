@@ -15,8 +15,8 @@ public class AdamPrime {
         
         int reversedNum = reverseNum(n);
 
-        int squared = n*n;
-        int reversSquared = reversedNum * reversedNum;
+        int squared = (int) Math.pow(n, 2);
+        int reversSquared = (int) Math.pow(reversedNum, 2);
 
         return squared == reverseNum(reversSquared);
 
