@@ -6,16 +6,9 @@ public class AdamPrime {
 
     public static int reverseNum(int n) {
         
-        int rev = 0;
+        StringBuffer num = new StringBuffer(Integer.toString(n));
+        return Integer.parseInt(num.reverse().toString());
 
-        while (n != 0) {
-            
-            rev = (rev*10) + (n % 10);
-            n /= 10;
-
-        }
-
-        return rev;
     }
     
     public static boolean isAdamNumber(int n) {
