@@ -115,3 +115,20 @@ public class BSEncrypt {
     }
     
 }
+
+/**
+ * How the encryption works:
+ * 1. I turn the ASCII value of the corresponding character into a string
+ * 2. I add it to a string which is creatively called "encrypted"
+ * 3. I reverese the string
+ * 
+ * How decreption works: 
+ * 1. I reverse the string
+ * 2. I get cut the ASCII values out (if a number starts with 1, I take the next 3 characters, otherwise the next 2)
+ * 3. I turn the ASCII value into a character thru explicit type conversion 
+ * 
+ * Writing this code made me lose braincells
+ * Stop looking into it, chances are you'd never need it
+ * Go play Doom or smth idk lol
+ * Doom is cool btw :)
+ */
