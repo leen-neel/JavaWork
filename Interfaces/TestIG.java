@@ -51,9 +51,15 @@ public class TestIG {
 
     public static void main(String[] args) {
         Pig steven = new Pig("Steven");
+        Cat snow = new Cat("Snow");
 
         steven.animalSound();
         steven.sleep();
+
+        System.out.println();
+
+        snow.animalSound();
+        snow.sleep();
     }
     
 }
