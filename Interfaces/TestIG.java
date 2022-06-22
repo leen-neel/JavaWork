@@ -1,6 +1,3 @@
-/**
- * TestIG
- */
 interface Animal {
 
     public void animalSound();
@@ -18,13 +15,33 @@ class Pig implements Animal {
 
     @Override
     public void animalSound() {
-        System.out.println(this.name + " says: Oink oink");
+        System.out.println(this.name + " says: Oink oink 🐷");
     }
 
     @Override
     public void sleep() {
         System.out.println(this.name + " is sleeping. Shhhhh! 🤫");
     }
+}
+
+class Cat implements Animal {
+
+    public String name;
+    
+    Cat(String  name) {
+        this.name = name;
+    }
+
+    @Override
+    public void animalSound() {
+        System.out.println(this.name + " is meowing 😺");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(this.name + " is sleeping. AGAIN!!");
+    }
+
 }
 
 /**
