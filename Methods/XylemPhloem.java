@@ -8,6 +8,11 @@ public class XylemPhloem {
         
         String num = Integer.toString(n);
 
+        if (num.length() < 3) {
+            System.out.println("Number has to have at least 3 digits.");
+            System.exit(0);
+        }
+
         int firstDig = Character.getNumericValue(num.charAt(0));
         int lastDig = Character.getNumericValue(num.charAt(num.length() - 1));
 
@@ -29,8 +34,7 @@ public class XylemPhloem {
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
 
-        System.out.print(n);
-        System.out.print(isXylem(n) ? " is a Xylem number" : " is a Phloem number");
+        System.out.print(isXylem(n) ? "Xylem number" : "Phloem number");
 
     }
 
