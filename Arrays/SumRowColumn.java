@@ -31,7 +31,9 @@ public class SumRowColumn {
            } 
         }
 
-        // Sum of row elements
+        System.out.println();
+
+        // Sum of each row
         int sumRow = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -43,6 +45,22 @@ public class SumRowColumn {
 
             System.out.println("Sum of row " + (i + 1) + " is: " + sumRow);
         }
+
+        System.out.println();
+
+        // Sum of each cloumn
+        int sumColumn = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            sumColumn = 0;
+
+            for (int j = 0; j < arr.length; j++) {
+                sumColumn += arr[j][i];
+            }
+
+            System.out.println("Sum of row " + (i + 1) + " is: " + sumColumn);
+        }
+
         
     }
 
