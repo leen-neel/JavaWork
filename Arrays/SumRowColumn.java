@@ -33,6 +33,11 @@ public class SumRowColumn {
 
         System.out.println();
 
+        System.out.println("The array you entered: ");
+        printArray(arr);
+
+        System.out.println();
+
         // Sum of each row
         int sumRow = 0;
 
