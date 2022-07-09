@@ -34,7 +34,7 @@ public class XylemPhloem {
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
 
-        System.out.print(isXylem(n) ? "Xylem number" : "Phloem number");
+        System.out.print(isXylem(n) ? "Xylem number\n" : "Phloem number\n");
 
     }
 
