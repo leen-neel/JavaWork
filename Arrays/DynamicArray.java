@@ -11,6 +11,12 @@ public class Array {
         this.length = length;
     }
 
+    public static void insert(int element) {
+        
 
+
+    
+
+    }
     
 }
