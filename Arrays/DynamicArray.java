@@ -11,11 +11,17 @@ public class Array {
         this.length = length;
     }
 
-    public static void insert(int element) {
+    public void insert(int element) {
         
+        if (this.arr.length == this.length) {
+            
+            int newArr = new int[2 * this.length];
 
+            for (int i = 0; i < this.length; i++) {
+                newArr[i] = i;
+            }
 
-    
+        }
 
     }
     
