@@ -2,8 +2,8 @@ import java.io.*;
 class SpiralMatrix {
   public static void spiralMatrixPrint(int[][] arr) {
 
-    int rows = arr.length;
-    int cols = arr[0].length;
+  int rows = arr.length;
+  int cols = arr[0].length;
   // Defining the boundaries of the matrix.
   int top = 0, bottom = rows - 1, left = 0, right = cols - 1;
   
