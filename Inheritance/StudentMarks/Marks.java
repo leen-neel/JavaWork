@@ -4,6 +4,9 @@ public class Marks extends Student {
    
     public void name() throws IOException {
         this.inputData();
+
+        System.out.println();
+
         this.displayData();
     }
 
