@@ -26,6 +26,10 @@ public class AdamPrime {
 
         int facts = 0;
 
+        if (n == 1 || n == 0) {
+            return false;
+        }
+
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
                 facts++;
