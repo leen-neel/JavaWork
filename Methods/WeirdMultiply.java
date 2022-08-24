@@ -1,5 +1,3 @@
-package Methods;
-
 public class WeirdMultiply {
 
     public static void main(String[] args) {

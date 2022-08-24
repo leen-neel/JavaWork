@@ -1,5 +1,3 @@
-package Methods;
-
 public class WeirdDesignThing___Help {
 
     private static void atSigns(int x, int y) {

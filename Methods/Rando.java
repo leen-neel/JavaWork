@@ -1,5 +1,3 @@
-package Methods;
-
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Rando {
