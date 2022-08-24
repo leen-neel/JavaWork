@@ -15,6 +15,8 @@ public class KaprekarNumber {
 
         if (n == 1) {
             return true;
+        } else if (n == 2 || n == 3) {
+            return false;
         }
 
         if (squareNum.length() % 2 == 0) {
