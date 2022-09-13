@@ -57,7 +57,27 @@ public class HappyNumber {
 }
 
 /*
- * 
+ *  
+ * 19:
+   82
+   68
+   100
+   1 <- 19 is a happy number
+ *   
+ * 2:
+   4
+   16
+   37
+   58
+   89
+   145
+   42
+   20
+   4 <- It's already in the list
+ *  
+ * This implies that the numbers keep going in loops, and the given number isn't a Happy Number
+ *  
+ * How the code works:  
  * The HashSet "visited" keeps track of the visited values
  * If the sum of square of the number's digit is 1, we know that it's a happy number
  * Otherwise, if the the sum of square of a number is in the set already, we know that the number isn't a Happy Number
