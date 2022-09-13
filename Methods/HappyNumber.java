@@ -55,3 +55,13 @@ public class HappyNumber {
     }
     
 }
+
+/*
+ * 
+ * The HashSet "visited" keeps track of the visited values
+ * If the sum of square of the number's digit is 1, we know that it's a happy number
+ * Otherwise, if the the sum of square of a number is in the set already, we know that the number isn't a Happy Number
+ * 
+ * Also, please end my pain thank you very much ❤
+ * 
+ */
