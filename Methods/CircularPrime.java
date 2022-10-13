@@ -1,3 +1,6 @@
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 
  /**
@@ -7,7 +10,11 @@ import java.util.Arrays;
     
     // Check if a number is a prime number or not
     public static boolean isPrime(int number) {
-        
+
+        if (number == 1) {
+            return false;
+        }
+
         int facts = 0;
 
         for (int i = 1; i <= number; i++) {
@@ -21,36 +28,43 @@ import java.util.Arrays;
     // Check if a number is a circular prime number or not
     public static boolean isCircularPrime(int number) {
         
-        int[] digits = new int[number];
-        int[] circular = new int[number];
-        int[] circularPrime = new int[number];
-        int count = 0;
-        
-        // Get the digits of the number
-        for (int i = 0; i < number; i++) {
-            digits[i] = number % 10;
-            number /= 10;
+        int count = 0, temp = number;
+
+        while (temp > 0) {
+            count++;
+            temp /= 10;
         }
-        
-        // Get the circular number
-        for (int i = 0; i < number; i++) {
-            circular[i] = digits[i] * (int) Math.pow(10, number - 1) + digits[i + 1];
-        }
-        System.out.println(Arrays.toString(circular));        
-        // Check if the circular number is a prime number
-        for (int i = 0; i < number; i++) {
-            if (isPrime(circular[i])) {
-                circularPrime[count] = circular[i];
-                count++;
+
+        int num = number;
+
+        while (isPrime(num)) {
+           
+            int rem = num % 10;
+            int div = num / 10;
+            num = (int)((Math.pow(10, count - 1)) * rem) + div;
+
+            System.out.println(num);
+
+            if (num == number) {
+                return true;
             }
+
         }
+
         
-        // Check if the circular number is a circular prime number
-        return count == number;
+        return false;
+        
     }
 
-    public static void main(String[] args) {
-        System.out.println(isCircularPrime(1193));
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter a number : ");
+        int number = Integer.parseInt(in.readLine());
+
+        System.out.println(isCircularPrime(number) ? "The number is a circular prime" : "The number isn\'t a Circular prime");
+
     }
      
  }
