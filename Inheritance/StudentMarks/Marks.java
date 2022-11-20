@@ -12,7 +12,7 @@ public class Marks extends Student {
 
     public static void main(String[] args) throws IOException {
         Marks obj = new Marks();
-        obj.name();   
+        obj.name(); 
     }
 
 }

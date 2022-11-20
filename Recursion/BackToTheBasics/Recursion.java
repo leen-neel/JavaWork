@@ -9,7 +9,7 @@ public class Recursion {
             return 1;
         }
 
-        return n + recurs(n - 1);
+        return 1 + recurs(n - 1);
         
     }
 
