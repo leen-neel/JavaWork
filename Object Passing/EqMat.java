@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * EqMat
+ * ISC 2018 - Q8
  */
 public class EqMat {
 
