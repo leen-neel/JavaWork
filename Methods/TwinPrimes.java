@@ -6,6 +6,8 @@ public class TwinPrimes {
 
     public static boolean isPrime(int n) {
 
+        if (n == 1) return false;
+        
         int flag = 0;
 
         for (int i = 1; i <= n; i++) {

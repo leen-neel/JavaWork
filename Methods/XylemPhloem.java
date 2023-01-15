@@ -12,13 +12,15 @@ public class XylemPhloem {
             System.out.println("Number has to have at least 3 digits.");
             System.exit(0);
         }
-
+        
+        // Sum of first and last digits
         int firstDig = Character.getNumericValue(num.charAt(0));
         int lastDig = Character.getNumericValue(num.charAt(num.length() - 1));
 
         int sumExtreme = firstDig + lastDig;
         int sumMean = 0;
 
+        // Sum of nums in the middle
         for (int i = 1; i < num.length() - 1; i++) {
             sumMean += Integer.parseInt(Character.toString(num.charAt(i)));
         }

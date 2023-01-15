@@ -5,6 +5,12 @@ import java.io.InputStreamReader;
 public class KaprekarNumber {
 
     public static boolean isKaprekar(int n) {
+
+        if (n == 1) {
+            return true;
+        } else if (n == 2 || n == 3) {
+            return false;
+        }
        
         int squared = (int) Math.pow(n, 2);
         int d = Integer.toString(n).length(); // d as given in the question
@@ -13,11 +19,6 @@ public class KaprekarNumber {
         StringBuffer firstHalf = new StringBuffer();
         StringBuffer secondHalf = new StringBuffer();
 
-        if (n == 1) {
-            return true;
-        } else if (n == 2 || n == 3) {
-            return false;
-        }
 
         if (squareNum.length() % 2 == 0) {
             
