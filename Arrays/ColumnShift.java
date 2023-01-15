@@ -1,0 +1,69 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ColumnShift {
+
+    public static int[][] shiftCol(int[][] arr) {
+
+        int m = arr.length;
+        int n = arr[0].length;
+        int newArr[][] = new int[m][n];
+
+        for (int j = 0; j < n; j++) {
+            int col = j + 1; // First, we add 1 to the column number
+
+            if (col == n) {
+                col = 0; // If the new column number is equal to the acutal column number, we set it to 0. Making it the first column
+            }
+
+            for (int i = 0; i < m; i++) {
+                newArr[i][col] = arr[i][j]; // Here, we get our row number from the loop then the col number from the parent loop
+            }
+        }
+
+        return newArr;
+        
+    }
+
+    public static void main(String args[]) throws IOException {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter number of rows (m): ");
+        int m = Integer.parseInt(in.readLine());
+
+        System.out.print("Enter number of columns (n): ");
+        int n = Integer.parseInt(in.readLine());
+        
+        System.out.println();
+        int arr[][] = new int[m][n];
+        
+        for (int i = 0; i < m; i++) {
+           for (int j = 0; j < n; j++) {
+                System.out.print("Enter data for position : (" + i + ", " + j + ") : ");
+                arr[i][j] = Integer.parseInt(in.readLine());
+           } 
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                 System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+         }
+
+         System.out.println();
+        int[][] newArr = shiftCol(arr);
+        
+        System.out.println("New Shifted Array:");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(newArr[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
