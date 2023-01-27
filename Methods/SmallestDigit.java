@@ -8,16 +8,20 @@ public class SmallestDigit {
 
     public static int smallestDigit(int n) {
 
-        char[] charDigits = Integer.toString(n).toCharArray();
-        int[] digits = new int[charDigits.length];
+        String number = Integer.toString(n);
+        int smallestDig = Character.getNumericValue(number.charAt(0));
 
-        for (int i = 0; i < digits.length; i++) {
-            digits[i] = Character.getNumericValue(charDigits[i]);
+        for (int i = 0; i < number.length(); i++) {
+
+            int currentNum = Character.getNumericValue(number.charAt(i));
+
+            if (currentNum < smallestDig) {
+                smallestDig = currentNum;
+            }
+            
         }
 
-        Arrays.sort(digits);
-
-        return digits[0];
+        return smallestDig;
 
     }
 
@@ -28,7 +32,7 @@ public class SmallestDigit {
         System.out.print("Enter a number : ");
         int n = Integer.parseInt(in.readLine());
 
-        System.out.println("The smalled digit is : " + smallestDigit(n));
+        System.out.println("The smallest digit is : " + smallestDigit(n));
 
     }
 
