@@ -55,7 +55,7 @@ public class ColumnShift {
             System.out.println();
          }
 
-         System.out.println();
+        System.out.println();
         int[][] newArr = shiftCol(arr);
         
         System.out.println("New Shifted Array:");
