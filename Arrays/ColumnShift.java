@@ -80,7 +80,6 @@ public class ColumnShift {
  * 
  * Variable list:
  * m - Integer - Stores the number of rows
- * n - Integer - Stores the number of columns
  * arr - int[][] - Stores the array
  * newArr - int[][] - Stores the new shifted array
  * 
