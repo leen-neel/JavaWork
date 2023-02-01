@@ -48,9 +48,11 @@ public class ColumnShift {
         System.out.println();
 
         for (int i = 0; i < m; i++) {
+
             for (int j = 0; j < m; j++) {
                 System.out.print(arr[i][j] + "\t");
             }
+
             System.out.println();
         }
 
@@ -59,9 +61,11 @@ public class ColumnShift {
 
         System.out.println("New Shifted Array:");
         for (int i = 0; i < m; i++) {
+
             for (int j = 0; j < m; j++) {
                 System.out.print(newArr[i][j] + "\t");
             }
+
             System.out.println();
         }
     }
