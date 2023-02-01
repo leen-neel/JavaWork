@@ -8,6 +8,6 @@ git commit -am "$commit_message"
 git push origin main
 
 clear
-figlet "Done!"
+echo "Done!"
 sleep 3
 clear
