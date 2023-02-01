@@ -32,17 +32,14 @@ public class ColumnShift {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter number of rows (m): ");
+        System.out.print("Enter the size of array (m): ");
         int m = Integer.parseInt(in.readLine());
 
-        System.out.print("Enter number of columns (n): ");
-        int n = Integer.parseInt(in.readLine());
-
         System.out.println();
-        int arr[][] = new int[m][n];
+        int arr[][] = new int[m][m];
 
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < m; j++) {
                 System.out.print("Enter data for position : (" + i + ", " + j + ") : ");
                 arr[i][j] = Integer.parseInt(in.readLine());
             }
@@ -51,7 +48,7 @@ public class ColumnShift {
         System.out.println();
 
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < m; j++) {
                 System.out.print(arr[i][j] + "\t");
             }
             System.out.println();
@@ -62,7 +59,7 @@ public class ColumnShift {
 
         System.out.println("New Shifted Array:");
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < m; j++) {
                 System.out.print(newArr[i][j] + "\t");
             }
             System.out.println();
